@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<geometry>
+  <cell id="70" material="70" region="-139" universe="24"/>
+  <cell id="71" material="71" region="139 -140" universe="24"/>
+  <cell id="72" material="72" region="140 141 -142 143 -144" universe="24"/>
+  <surface id="139" type="z-cylinder" coeffs="0.0 0.0 0.4096"/>
+  <surface id="140" type="z-cylinder" coeffs="0.0 0.0 0.475"/>
+  <surface id="141" type="x-plane" boundary="reflective" coeffs="-0.63"/>
+  <surface id="142" type="x-plane" boundary="reflective" coeffs="0.63"/>
+  <surface id="143" type="y-plane" boundary="reflective" coeffs="-0.63"/>
+  <surface id="144" type="y-plane" boundary="reflective" coeffs="0.63"/>
+</geometry>
