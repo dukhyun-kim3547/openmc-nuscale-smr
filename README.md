@@ -24,6 +24,27 @@ Pin cell k-infinity comparison between Large PWR and NuScale VOYGR.
 **Finding:** Higher enrichment in NuScale provides +0.082 excess reactivity,  
 enabling sufficient fuel life in a compact core.
 
+---
+
+### 2. Critical Size Search (`critical_size.py`)
+k-effective vs core radius for NuScale VOYGR — finding minimum critical size.
+
+![Critical Size](critical_size.png)
+
+| Core Radius (cm) | k-effective | Status |
+|-----------------|-------------|--------|
+| 20 | 0.732 ± 0.002 | ❌ Subcritical |
+| 30 | 1.018 ± 0.002 | ✅ Critical |
+| 85 | 1.371 ± 0.002 | ✅ NuScale actual |
+| 120 | 1.406 ± 0.001 | ✅ Supercritical |
+
+**Finding:** Minimum critical radius ~29 cm (0.59 m diameter).  
+NuScale's actual 85 cm core provides 2.9× safety margin over minimum critical size,  
+ensuring sufficient fuel life, power output, and shutdown margin.
+
+---
+
+
 ## References
 
 - NuScale FSAR (Publicly available NRC Design Certification Document)
