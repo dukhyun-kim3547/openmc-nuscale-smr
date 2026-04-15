@@ -64,6 +64,27 @@ confirming NuScale DHRS passive safety without pumps or external power.
 
 ---
 
+---
+
+### 4. HALEU vs PWR Depletion Comparison (`haleu_depletion.py`)
+Burnup analysis comparing NuScale VOYGR (4.95% HALEU) vs Large PWR (3.1%).
+
+![HALEU Depletion](haleu_depletion.png)
+
+| Time (days) | PWR k-eff | NuScale k-eff | PWR U-235 (%) | NuScale U-235 (%) |
+|-------------|-----------|---------------|---------------|-------------------|
+| 0 | 1.368 | 1.446 | 100% | 100% |
+| 571 | 1.104 | 1.218 | 48.7% | 63.1% |
+| 1,291 | 0.937 ❌ | 1.063 ✅ | 17.2% | 32.7% |
+| 2,371 | 0.808 ❌ | 0.887 ❌ | 2.3% | 9.2% |
+
+**Key findings:**
+- PWR reaches criticality limit at ~1,100 days (~3 years)
+- NuScale HALEU remains critical ~700 days longer (~2 extra years of fuel life)
+- NuScale produces less Pu-239 (13.5% vs 18.9%) → lower proliferation risk
+
+---
+
 ## References
 
 - NuScale FSAR (Publicly available NRC Design Certification Document)
